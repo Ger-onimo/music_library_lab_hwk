@@ -21,11 +21,11 @@ album3.save
 album4.save
 
 
-artist1.name = "Nirvs"
-artist1.update
-
-album3.genre = "synth pop"
-album3.update
+# artist1.name = "Nirvs"
+# artist1.update
+#
+# album3.genre = "synth pop"
+# album3.update
 
 artist = Artist.all()
 albums = Album.all()
@@ -35,6 +35,8 @@ albums = Album.all()
 
 catalogue = artist1.albums
 nirvana = album1.artist
+
+found_album = Album.find(album2.id)
 
 binding.pry
 nil
