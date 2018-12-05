@@ -20,11 +20,15 @@ album2.save
 album3.save
 album4.save
 
-artists = Artist.all()
-albums = Album.all()
+Artist.all()
+Album.all()
+
+album1.delete
+artist1.delete
 
 catalogue = artist1.albums
 nirvana = album1.artist
+
 
 
 binding.pry
