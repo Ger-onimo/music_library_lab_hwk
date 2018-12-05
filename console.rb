@@ -20,16 +20,21 @@ album2.save
 album3.save
 album4.save
 
-Artist.all()
-Album.all()
 
-album1.delete
-artist1.delete
+artist1.name = "Nirvs"
+artist1.update
+
+album3.genre = "synth pop"
+album3.update
+
+artist = Artist.all()
+albums = Album.all()
+
+# album1.delete
+# artist2.delete
 
 catalogue = artist1.albums
 nirvana = album1.artist
-
-
 
 binding.pry
 nil
