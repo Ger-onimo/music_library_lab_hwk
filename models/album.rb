@@ -75,7 +75,7 @@ class Album
     values = [id]
     result = SqlRunner.run(sql, values)
     # albums_hash = result[0]
-    return Album.new(result[0])
+    return Album.new(result[0]) #not a hash - returning an object from an array of objects
   end
 
 end
