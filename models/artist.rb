@@ -59,7 +59,7 @@ class Artist
   def self.find(id)
     sql = "SELECT * FROM artists WHERE id = $1"
     values = [id] #the RETURNING id number
-    result = SqlRunner.run(sql, values)
+    result = SqlRunner.run(sql, values) #the result of running the "query" from the helper
     return Artist.new(result[0]) #result is object from an array at index 0
   end
 end
